@@ -1,0 +1,549 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: #222;
+	background-color: #adadad;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+
+@media (min-width: 720px) {
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 2rem;
+}
+
+.title{
+    grid-column: 1/13;
+    grid-row: 1/1;
+}
+
+.text1{
+grid-column: 3/11;
+grid-row: 3/3;
+}
+
+.text2{
+grid-column: 7/12;
+grid-row:4/4;
+}
+
+
+.text3{
+grid-column: 2/8;
+grid-row:5/5;
+}
+
+.text4{
+grid-column: 3/11;
+grid-row: 6/6;
+}
+
+.text5{
+grid-column: 3/11;
+grid-row: 7/7;
+}
+
+.text6{
+grid-column: 3/11;
+grid-row:8/8;
+}
+
+.text7{
+grid-column: 3/11;
+grid-row:4/4;
+}
+
+.text8{
+grid-column: 3/11;
+grid-row: 5/5;
+}
+
+.text9{
+grid-column: 3/11;
+grid-row: 4/4;
+}
+
+.text10{
+grid-column: 3/11;
+grid-row: 5/5;
+}
+
+.text11{
+grid-column: 4/10;
+grid-row: 3/3;
+}
+
+.text12{
+grid-column: 3/11;
+grid-row:6/6;
+}
+
+.text13{
+grid-column: 3/11;
+grid-row: 7/7;
+}
+
+.omaha{
+	grid-column: 2/4;
+	grid-row: 4/4;
+}
+
+.supremecommand{
+	grid-column: 8/11;
+	grid-row: 5/5;
+}
+
+.atlantic{
+	grid-column: 3/8;
+	grid-row: 5/5;
+}
+
+.overviewleft1{
+    grid-column: 4/7;
+    grid-row: 5/5;
+}
+
+.overviewright1{
+    grid-column: 7/10; 
+    grid-row: 5/5;
+}
+
+.overviewheader1{
+    grid-column: 4/10;
+    grid-row: 4/4;  
+}
+
+.overviewleft2{
+    grid-column: 4/7;
+    grid-row: 7/7;
+}
+
+.overviewright2{
+    grid-column: 7/10; 
+    grid-row: 7/7;
+}
+
+.overviewheader2{
+    grid-column: 4/10;
+    grid-row: 6/6;  
+}
+
+.overviewleft3{
+    grid-column: 4/7;
+    grid-row: 9/9;
+}
+
+.overviewright3{
+    grid-column: 7/10; 
+    grid-row: 9/9;
+}
+
+.overviewheader3{
+    grid-column: 4/10;
+    grid-row: 8/8;   
+}
+
+.overviewleft4{
+    grid-column: 4/7;
+    grid-row: 11/11;
+}
+
+.overviewright4{
+    grid-column: 7/10; 
+    grid-row: 11/11;
+}
+
+.overviewheader4{
+    grid-column: 4/10;
+    grid-row: 10/10;  
+}
+
+.overviewleft5{
+    grid-column: 4/7;
+    grid-row: 13/13;
+}
+
+.overviewright5{
+    grid-column: 7/10;  
+    grid-row: 13/13;
+}
+
+.overviewheader5{
+    grid-column: 4/10;
+    grid-row: 12/12; 
+}
+
+.global-nav{
+    grid-column: 1/13;
+    grid-row: 2/2;
+}
+    
+.global-nav li{
+	display: inline-block;
+}
+    
+}
+
+
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1200px;
+	background-color: #fff;
+    padding-bottom: 2em;
+}
+
+.title{
+    padding-top: .75em;
+    padding-left: .5em;
+    font-family: 'Crimson Text', serif;
+	color: #000;
+    font-size: 4em;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.text1{
+margin-bottom: -60px
+}
+
+.text2{
+margin-left: -50px;
+padding-right: 45px;
+}
+
+
+.text3{
+padding-left: 2.5em;
+margin-top: -15px;
+}
+
+.text4{
+
+}
+
+.text5{
+
+}
+
+.text6{
+}
+
+.text7{
+padding-top: 2em;
+}
+
+.text8{
+
+}
+
+.text9{
+
+}
+
+.text10{
+}
+
+.text11{
+text-align: justify;
+}
+
+.text12{
+
+}
+
+.text13{
+    
+}
+
+.omaha{
+padding-left: 2.5em;
+	height: 425px;
+	width: 550px;
+    margin-left: -90px;
+    margin-top: 85px;
+}
+
+.supremecommand{
+padding-right: 2.75em;
+	height: 400px;
+	width: 500px;
+    margin-top: 325px;
+    margin-left: -20px;
+}
+
+.atlantic{
+padding-left: 2.5em;
+	height: 400px;
+	width: 750px;
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
+
+.overviewleft1{
+    padding-left: 2em;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.overviewright1{
+    padding-left: 2em;
+    text-align: left;
+    margin-left: -1em;
+    line-height: 2.5em;
+    border-left: solid 1px #000;
+}
+
+.overviewheader1{
+    text-align: center;
+    border-bottom: solid #000 1px;
+    font-size: 1.15em;
+    font-family: 'Oxygen Mono', sans-serif;
+    text-transform: uppercase;
+    color: #222;
+    padding-bottom: 10px;
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+.overviewleft2{
+    padding-left: 2em;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.overviewright2{
+    padding-left: 2em;
+    text-align: left;
+    margin-left: -1em;
+    line-height: 2.5em;
+    border-left: solid 1px #000;
+}
+
+.overviewheader2{
+    text-align: center;
+    border-bottom: solid #000 1px;
+    font-size: 1.15em;
+    font-family: 'Oxygen Mono', sans-serif;
+    text-transform: uppercase;
+    color: #222;
+    padding-bottom: 10px;
+    font-weight: normal;  
+    padding-top: 50px;
+}
+
+.overviewleft3{
+    padding-left: 2em;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.overviewright3{
+    padding-left: 2em;
+    text-align: left;
+    margin-left: -1em;
+    line-height: 2.5em;
+    border-left: solid 1px #000;
+}
+
+.overviewheader3{
+    text-align: center;
+    border-bottom: solid #000 1px;
+    font-size: 1.15em;
+    font-family: 'Oxygen Mono', sans-serif;
+    text-transform: uppercase;
+    color: #222;
+    padding-bottom: 10px;
+    font-weight: normal; 
+    padding-top: 50px;
+}
+
+.overviewleft4{
+    padding-left: 2em;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.overviewright4{
+    padding-left: 2em;
+    text-align: left;
+    margin-left: -1em;
+    line-height: 2.5em;
+    border-left: solid 1px #000;
+}
+
+.overviewheader4{
+    text-align: center;
+    border-bottom: solid #000 1px;
+    font-size: 1.15em;
+    font-family: 'Oxygen Mono', sans-serif;
+    text-transform: uppercase;
+    color: #222;
+    padding-bottom: 10px;
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+.overviewleft5{
+    padding-left: 2em;
+    text-align: left;
+    line-height: 2.5em;
+}
+
+.overviewright5{
+    padding-left: 2em;
+    text-align: left;
+    margin-left: -1em;
+    line-height: 2.5em;
+    border-left: solid 1px #000;
+}
+
+.overviewheader5{
+    text-align: center;
+    border-bottom: solid #000 1px;
+    font-size: 1.15em;
+    font-family: 'Oxygen Mono', sans-serif;
+    text-transform: uppercase;
+    color: #222;
+    padding-bottom: 10px;
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+.global-nav{
+    overflow: hidden;
+    border-top: solid 1px #adadad;
+    border-bottom: solid 1px #adadad;
+    margin-bottom: -10px;
+    font-family: 'Oxygen Mono', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background: #fff
+}
+
+.global-nav ul{
+	padding: 0px;
+}
+
+.global-nav li{
+    margin-right: -11px;
+	list-style: none;
+}
+
+.global-nav a{
+    text-align: center;
+	text-decoration: none;
+    padding: 20px 46px;
+    color: #000;
+    word-spacing: 10px;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+.global-nav a:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+.global-nav a.active{
+    background-color: #222;
+    color: #fff;
+}
+
+h1{
+	font-family: 'Crimson Text', serif;
+	color: #000;
+    text-decoration: none;
+    text-shadow: 
+}
+
+
+h2{
+    font-family: 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: #222;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #222;
+    font-weight: normal;
+}
+
+h3{
+    padding-top: 30px;
+    font-family: 'Oxygen Mono', sans-serif;
+}
+
+h4{
+    padding-top: 20px;
+}
+
+b{
+
+}
+
+i{
+    
+}
+
+strong{
+color: #243322;    
+}
+
+em{
+color: #000;    
+}
+
+
+a{
+	color: #484848;
+	text-decoration: none;
+	font-size: 13px
+}
+
+a:hover{
+    color: #636363
+}
+
+figcaption{
+    margin-left: 15px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    text-decoration: none;
+}
