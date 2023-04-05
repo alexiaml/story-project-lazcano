@@ -3,7 +3,7 @@
 Starter files for intro web design/development
 
 Story project: Normandy Landings
-Alexia Lazcano, WEB ADDRESS
+Alexia Lazcano, https://alexiaml.github.io/story-project-lazcano/
 
 ***
 
